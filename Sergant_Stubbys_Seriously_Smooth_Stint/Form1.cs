@@ -22,6 +22,8 @@ namespace Sergant_Stubbys_Seriously_Smooth_Stint
         private string subjectText;
         private string bodyText;
 
+        //THIS IS A COMMENTY SUCH DISCRIPTION MUCH WOW
+
 
         public Form1()
         {
