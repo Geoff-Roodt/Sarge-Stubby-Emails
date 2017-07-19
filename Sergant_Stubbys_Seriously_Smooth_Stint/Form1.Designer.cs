@@ -50,6 +50,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.progressBarEmails = new System.Windows.Forms.ProgressBar();
+            this.labelSenderError = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -58,6 +60,7 @@
             // textBoxEmailFrom
             // 
             this.textBoxEmailFrom.Location = new System.Drawing.Point(86, 44);
+            this.textBoxEmailFrom.Multiline = true;
             this.textBoxEmailFrom.Name = "textBoxEmailFrom";
             this.textBoxEmailFrom.Size = new System.Drawing.Size(372, 20);
             this.textBoxEmailFrom.TabIndex = 0;
@@ -222,6 +225,7 @@
             // panel2
             // 
             this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel2.Controls.Add(this.labelSenderError);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.textBoxEmailFrom);
@@ -251,11 +255,27 @@
             // panel3
             // 
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel3.Controls.Add(this.progressBarEmails);
             this.panel3.Controls.Add(this.buttonSend);
             this.panel3.Location = new System.Drawing.Point(12, 464);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(495, 66);
             this.panel3.TabIndex = 19;
+            // 
+            // progressBarEmails
+            // 
+            this.progressBarEmails.Location = new System.Drawing.Point(14, 13);
+            this.progressBarEmails.Name = "progressBarEmails";
+            this.progressBarEmails.Size = new System.Drawing.Size(320, 38);
+            this.progressBarEmails.TabIndex = 17;
+            // 
+            // labelSenderError
+            // 
+            this.labelSenderError.AutoSize = true;
+            this.labelSenderError.Location = new System.Drawing.Point(4, 154);
+            this.labelSenderError.Name = "labelSenderError";
+            this.labelSenderError.Size = new System.Drawing.Size(0, 13);
+            this.labelSenderError.TabIndex = 17;
             // 
             // Form1
             // 
@@ -300,6 +320,8 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ProgressBar progressBarEmails;
+        private System.Windows.Forms.Label labelSenderError;
     }
 }
 
